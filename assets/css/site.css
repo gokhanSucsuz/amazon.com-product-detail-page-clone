@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+nav .btn:hover {
+  border: 1px solid #fff !important;
+}
