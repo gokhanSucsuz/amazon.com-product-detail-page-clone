@@ -4,10 +4,55 @@
   box-sizing: border-box;
 }
 
+.breadcrumb a {
+  text-decoration: none;
+  color: rgb(102, 102, 102);
+  opacity: 50%;
+
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  opacity: 50%;
+}
+
+.fs-small {
+  font-size: 0.75rem;
+}
+
+a:hover {
+  text-decoration: solid;
+  opacity: 100%;
+  transition: opacity 1s;
+}
+
 nav * {
   color: #fff;
 }
 
 nav .btn:hover {
   border: 1px solid #fff !important;
+}
+
+.breadcrumb {
+  color: rgb(102, 102, 102)
+}
+
+.product-color {
+  color: #e28637 !important;
+}
+
+.table {
+  font-size: .85rem !important;
+}
+
+@media only screen and (max-width: 440px) {
+  .input-group {
+    width: 100% !important;
+  }
+
+  * {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 }

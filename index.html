@@ -15,19 +15,16 @@
   <link rel="stylesheet" href="assets/css/site.css">
   <title>Amazon.com: Apple iMac 24" with Retina 4.5K Display, M1 Chip with 8-Core CPU and 8-Core GPU, 16GB Memory, 1TB
     SSD, Gigabit Ethernet, Magic Keyboard with Touch ID and Numeric Keypad, Silver, Mid 2021 : Electronics</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-    }
-  </style>
 </head>
 
 <body>
   <!-- navbar top start -->
-  <nav class="navbar navbar-expand-lg py-0" style="background-color: #00453e;">
+  <nav class="navbar-top navbar navbar-expand-lg py-0 px-2" style="background-color: #00453e; color:#fff;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <div class="row">
+        <div class="col-12 d-flex d-md-none"></div>
+      </div>
+      <a class="navbar-brand ms-5 ps-5 ms-lg-0 ps-lg-0" href="#">
         <img src="assets/img/logo.png" class="w-100" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -35,8 +32,8 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex w-100">
-          <li class="d-flex flex-column flex-md-row gap-2 justify-content-end w-100 align-items-sm-center">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0 d-flex w-100 gap-2 align-items-center">
+          <li class="d-flex order-first flex-column flex-md-row justify-content-start">
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-sm d-flex align-items-end gap-1 lh-1"
               style="--bs-link-hover-color-rgb:0,0,0;" data-bs-toggle="modal" data-bs-target="#deliveryModalButton">
@@ -46,7 +43,9 @@
                 <span>Germany</span>
               </div>
             </button>
-            <!--Delivery button Modal start-->
+          </li>
+          <!--Delivery button Modal start-->
+          <li class="d-flex flex-column flex-md-row justify-content-end align-items-md-center">
             <div class="modal fade" id="deliveryModalButton" tabindex="-1" aria-labelledby="deliveryModalButtonLabel"
               aria-hidden="true">
               <div class="modal-dialog">
@@ -71,9 +70,11 @@
               </div>
             </div>
             <!--Delivery button Modal end-->
+          </li>
+          <li class="d-flex flex-column order-sm-first flex-sm-row w-100">
             <!-- search start -->
-            <form role="search" class="ms-4 w-100">
-              <div class="input-group">
+            <form role="search" class="w-100">
+              <div class="input-group" style="min-width: 100px!important;">
                 <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
                   aria-expanded="false" data-bs-offset="10,20">All</button>
                 <ul class="dropdown-menu">
@@ -87,61 +88,74 @@
                     <hr class="dropdown-divider">
                   </li>
                 </ul>
-                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                  style="min-width: 100px!important;">
               </div>
             </form>
             <!-- search end -->
-            <!--translate button Modal start-->
-            <button type="button" class="btn btn-sm d-flex align-items-end px-3 mx-2 gap-1 nav-item lh-lg"
-              style="--bs-link-hover-color-rgb:0,0,0;">
-              <i class="bi bi-flag-fill text-light" style="font-size: .6rem;"></i>
-              <div class="d-flex flex-column gap-1 text-start">
-                <span>EN</span>
+          </li>
+          <li class="d-flex justify-content-start justify-content-sm-end align-items-md-center mx-0">
+            <div class="col d-flex flex-column flex-sm-row align-items-center gap-2 justify-content-center px-1">
+              <div class="col d-flex">
+                <!--translate button Modal start-->
+                <button type="button" class="btn btn-sm d-flex align-items-center px-1 gap-1 nav-item lh-lg"
+                  style="--bs-link-hover-color-rgb:0,0,0; ">
+                  <i class="bi bi-flag-fill text-light" style=""></i>
+                  <div class="d-flex flex-column text-start w-100 h6">
+                    <span>EN</span>
+                  </div>
+                  <i class="bi bi-caret-down-fill text-secondary" style="font-size: .6rem;"></i>
+                </button>
+                <!--translate button Modal end-->
               </div>
-              <i class="bi bi-caret-down-fill text-secondary" style="font-size: .6rem;"></i>
-            </button>
-            <!--translate button Modal end-->
-            <!--signIn button Modal start-->
-            <button type="button" class="btn btn-sm d-flex align-items-end gap-1 lh-1 nav-item"
-              style="--bs-link-hover-color-rgb:0,0,0; width: 11%;">
-              <div class="d-flex flex-column gap-1 text-start">
-                <small class="text-white-50">Hello, sign in</small>
-                <span>Account & Lists</span>
+              <div class="col d-flex">
+                <!--signIn button Modal start-->
+                <button type="button" class="btn btn-sm d-flex align-items-end gap-1 py-1 lh-1 nav-item w-100"
+                  style="--bs-link-hover-color-rgb:0,0,0;">
+                  <div class="d-flex flex-column gap-1 text-start w-100">
+                    <small class="text-white-50">Hello, sign in</small>
+                    <span>Account & Lists</span>
+                  </div>
+                  <i class="bi bi-geo-alt fs-6"></i>
+                </button>
+                <!--signIn button Modal end-->
               </div>
-              <i class="bi bi-geo-alt fs-6"></i>
-            </button>
-            <!--signIn button Modal end-->
-            <!--orders button Modal start-->
-            <button type="button" class="btn btn-sm d-flex align-items-end gap-1 lh-1 nav-item"
-              style="--bs-link-hover-color-rgb:0,0,0; width: 8%;" data-bs-toggle="modal"
-              data-bs-target="#deliveryModalButton">
-              <div class="d-flex flex-column gap-1 text-start">
-                <small class="text-white-50 ">Return</small>
-                <span>& Orders</span>
+              <div class="col">
+                <!--orders button Modal start-->
+                <button type="button" class="btn btn-sm d-flex align-items-end gap-1 lh-1 nav-item w-100"
+                  style="--bs-link-hover-color-rgb:0,0,0; width: 11%;" data-bs-toggle="modal"
+                  data-bs-target="#deliveryModalButton">
+                  <div class="d-flex flex-column gap-1 text-start">
+                    <small class="text-white-50 ">Return</small>
+                    <span>& Orders</span>
+                  </div>
+                </button>
+                <!--orders button Modal end-->
               </div>
-            </button>
-            <!--orders button Modal end-->
-            <!--shopping button Modal start-->
-            <button type="button" class="btn btn-sm d-flex align-items-end gap-1 lh-1 nav-item"
-              style="--bs-link-hover-color-rgb:0,0,0;" data-bs-toggle="modal" data-bs-target="#deliveryModalButton">
-              <i class="bi bi-cart-check fs-1"></i>
-              <div class="d-flex flex-column gap-1 text-start">
-                <small class="text-white-50 "></small>
-                <span>Cart</span>
+              <div class="col">
+                <!--shopping button Modal start-->
+                <button type="button" class="btn btn-sm d-flex align-items-end gap-1 lh-1 nav-item w-100"
+                  style="--bs-link-hover-color-rgb:0,0,0; width: 11%;" data-bs-toggle="modal"
+                  data-bs-target="#deliveryModalButton">
+                  <i class="bi bi-cart-check fs-2"></i>
+                  <div class="d-flex flex-column gap-1 text-start">
+                    <small class="text-white-50 "></small>
+                    <span>Cart</span>
+                  </div>
+                </button>
+                <!--shopping button Modal end-->
               </div>
-            </button>
-            <!--shopping button Modal end-->
+            </div>
           </li>
         </ul>
-
       </div>
     </div>
     </div>
   </nav>
   <!-- navbar top end -->
   <!-- navbar bottom start  -->
-  <nav class="navbar bg-body-secondary py-0" style="background-color: #195851!important;">
-    <div class="container-fluid d-flex justify-content-start">
+  <nav class="navbar-bottom navbar bg-body-secondary py-1" style="background-color: #195851!important;">
+    <div class="container-fluid d-flex justify-content-start flex-column flex-sm-row gap-1">
       <button class="navbar-toggler text-light d-flex gap-2 align-items-sm-center" type="button"
         data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
         aria-label="Toggle navigation">
@@ -149,7 +163,7 @@
         <small class="fw-bold" style="font-size: .8rem;">All</small>
       </button>
       <div class="row">
-        <div class="col">
+        <div class="col d-flex flex-column flex-sm-row w-100">
           <div class="btn text-light " style="font-size: .9rem;">Today's Deals</div>
           <div class="btn text-light " style="font-size: .9rem;">Registry</div>
           <div class="btn text-light " style="font-size: .9rem;">Costumer Service</div>
@@ -195,14 +209,14 @@
   </nav>
   <!-- navbar bottom end  -->
   <!-- navbar bottom property start -->
-  <div class="container-fluid">
+  <div class="container-fluid shadow bg-body-secondary">
     <div class="container">
-      <div class="row py-3">
+      <div class="row py-1 d-flex align-items-center">
         <div class="col-3 d-flex justify-content-center">
           <img src="assets/img/ipad_.jpg" class="img-thumbnail" width="60" alt="">
         </div>
         <div class="col-6">
-          <p class="overflow-hidden text-nowrap">
+          <p class="overflow-hidden text-nowrap fw-bold text-center m-0" style="font-size: .8rem;">
             Apple iPad Pro 12.9-inch (6th Generation): with M2 chip, Liquid Retina XDR
             Display,
             256GB,
@@ -211,17 +225,200 @@
           </p>
         </div>
         <div class="col-3 d-flex justify-content-center">
-          <div class="text-danger d-flex align-items-start bg-warning">
+          <div class="text-danger d-flex align-items-start">
             <div class="d-flex py-1">$</div>
-            <div class="d-flex fs-3 ">806</div>
-            <div class="d-flex py-1">05</div>
+            <div class="d-flex fs-4 ">806</div>
+            <div class="d-flex py-1">.05</div>
           </div>
         </div>
       </div>
     </div>
   </div>
   <!-- navbar bottom property end -->
-
+  <!-- breadcrumb start -->
+  <div class="container py-3">
+    <div class="row">
+      <div class="col">
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb" style="font-size: .85rem;">
+            <li class="breadcrumb-item"><a href="#">Elektronics</a></li>
+            <li class="breadcrumb-item"><a href="">Computers & Accessories</a></li>
+            <li class="breadcrumb-item"><a href="">Computers & Tablets</a></li>
+            <li class="breadcrumb-item"><a href="">Desktops</a></li>
+            <li class="breadcrumb-item"><a href="">All-in-Ones</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- breadcrumb end -->
+  <!-- product detail area start -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-5 d-flex p-3">
+        <div class="col-2 d-flex flex-column px-2">
+          <a href="#">
+            <img src="assets/img/1.jpg" alt="" class="img-thumbnail " width="60" height="60">
+          </a>
+          <a href="#">
+            <img src="assets/img/2.jpg" alt="" class="img-thumbnail " width="60" height="60">
+          </a>
+          <a href="#">
+            <img src="assets/img/3.jpg" alt="" class="img-thumbnail " width="60" height="60">
+          </a>
+          <a href="#">
+            <img src="assets/img/4.jpg" alt="" class="img-thumbnail " width="60" height="60">
+          </a>
+          <a href="#">
+            <img src="assets/img/5.jpg" alt="" class="img-thumbnail " width="60" height="60">
+          </a>
+          <a href="#">
+            <img src="assets/img/6.jpg" alt="" class="img-thumbnail " width="60" height="60">
+          </a>
+          <a href="#">
+            <img src="assets/img/7.png" alt="" class="img-thumbnail " width="60" height="60">
+          </a>
+        </div>
+        <div class="col-10">
+          <div class="col">
+            <img src="assets/img/1.jpg" alt="" style="width: 100%;">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-5">
+        <div class="row">
+          <div class="col">
+            <h3 style="font-size: 1.6rem;">Apple iMac 24" with Retina 4.5K Display, M1 Chip with 8-Core CPU and 8-Core
+              GPU, 16GB Memory, 1TB SSD,
+              Gigabit Ethernet,
+              Magic Keyboard with Touch ID and Numeric Keypad, Silver, Mid 2021</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="col">
+              <a href="#" class="product-color">Visit the Apple Store</a>
+            </div>
+            <div class="col">
+              <small>2.6
+                <span class="text-warning">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                </span>
+              </small>
+              <small class="text-warning ps-4">2 ratings</small>
+            </div>
+            <hr>
+            <div class="col">
+              <div class="col d-flex">
+                <small>Price:</small>
+                <h5 class="product-color ps-2">$2,119.00</h5>
+              </div>
+              <table class="table table-striped table-bordered">
+                <tbody>
+                  <tr>
+                    <th scope="row">Brand</th>
+                    <td>Apple</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ram Memory Installed Size</th>
+                    <td>16GB</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Included Components</th>
+                    <td>Keyboard</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Color</th>
+                    <td>Silver</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Special Feature</th>
+                    <td>Numeric keypad</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">CPU Manufacturer</th>
+                    <td>VIA</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Connectivity Technology</th>
+                    <td>USB, Ethernet, Thunderbolt</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">CPU Speed</th>
+                    <td>3.1, 3.1 GHz</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">RAM Memory</th>
+                    <td>16 GB</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Maximum Size</th>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Hard Disk Description</th>
+                    <td>SSD</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <hr>
+            <div class="col pb-2">
+              <h5>About this item</h5>
+              <ul>
+                <li>Apple iMac 24" with Retina 4.5K Display (Silver) - Magic Keyboard with Touch ID and Numeric Keypad -
+                  Magic Mouse - 143W
+                  Power Adapter - Power Cord (2m) - USB-C to Lightning Cable - AppleCare - Apple 1 Year Limited Warranty
+                </li>
+                <li>1TB storage</li>
+                <li>16GB unified memory</li>
+                <li>24" 4.5K Retina display</li>
+                <li>Two Thunderbolt / USB 4 ports</li>
+              </ul>
+              <a href="#" class="product-color">› See more product details</a>
+            </div>
+            <strong>Note: </strong>
+            <small>Products with electrical plugs are designed for use in the US. Outlets and voltage differ
+              internationally and this
+              product may require an adapter or converter for use in your destination. Please check compatibility before
+              purchasing.</small>
+          </div>
+        </div>
+      </div>
+      <div class="d-none d-lg-flex col-lg-2 flex-column row-gap-3">
+        <div class="card h-25">
+          <div class="card-body product-color">
+            <h5 class="card-title">$2,119.00</h5>
+            <small class="card-subtitle mb-2 text-body-secondary">This item cannot be shipped to your selected delivery
+              location. Please choose a different delivery location.</small>
+            <p class="card-text"><a href="#" class="product-color">
+                <i class="bi bi-geo-alt"><small>Deliver to Germany</small></i>
+              </a>
+            </p>
+            <a href="#" class="btn btn-warning btn-sm w-100">See similar items</a>
+          </div>
+        </div>
+        <div class="card h-50">
+          <div class="card-body">
+            <h5 class="card-title fs-small">Add an Accessory:</h5>
+            <hr>
+            <small class="card-subtitle mb-2 text-body-secondary">This item cannot be shipped to your selected delivery
+              location. Please choose a different delivery location.</small>
+            <p class="card-text"><a href="#" class="product-color">
+                <i class="bi bi-geo-alt"><small>Deliver to Germany</small></i>
+              </a>
+            </p>
+            <a href="#" class="btn btn-warning btn-sm w-100">See similar items</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- product detail area end  -->
 
   <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
