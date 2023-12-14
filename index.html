@@ -25,7 +25,7 @@
 
 <body>
   <!-- navbar top start -->
-  <nav class="navbar navbar-expand-lg" style="background-color: #00453e;">
+  <nav class="navbar navbar-expand-lg py-0" style="background-color: #00453e;">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="assets/img/logo.png" class="w-100" alt="">
@@ -140,21 +140,21 @@
   </nav>
   <!-- navbar top end -->
   <!-- navbar bottom start  -->
-  <nav class="navbar bg-body-secondary" style="background-color: #195851!important;">
+  <nav class="navbar bg-body-secondary py-0" style="background-color: #195851!important;">
     <div class="container-fluid d-flex justify-content-start">
       <button class="navbar-toggler text-light d-flex gap-2 align-items-sm-center" type="button"
         data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
         aria-label="Toggle navigation">
         <i class="navbar-toggler-icon"></i>
-        <small>All</small>
+        <small class="fw-bold" style="font-size: .8rem;">All</small>
       </button>
       <div class="row">
         <div class="col">
-          <div class="btn text-light ">Today's Deals</div>
-          <div class="btn text-light ">Registry</div>
-          <div class="btn text-light ">Costumer Service</div>
-          <div class="btn text-light ">Gift Cards</div>
-          <div class="btn text-light ">Sell</div>
+          <div class="btn text-light " style="font-size: .9rem;">Today's Deals</div>
+          <div class="btn text-light " style="font-size: .9rem;">Registry</div>
+          <div class="btn text-light " style="font-size: .9rem;">Costumer Service</div>
+          <div class="btn text-light " style="font-size: .9rem;">Gift Cards</div>
+          <div class="btn text-light " style="font-size: .9rem;">Sell</div>
         </div>
       </div>
       <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -194,8 +194,33 @@
     </div>
   </nav>
   <!-- navbar bottom end  -->
-
-
+  <!-- navbar bottom property start -->
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row py-3">
+        <div class="col-3 d-flex justify-content-center">
+          <img src="assets/img/ipad_.jpg" class="img-thumbnail" width="60" alt="">
+        </div>
+        <div class="col-6">
+          <p class="overflow-hidden text-nowrap">
+            Apple iPad Pro 12.9-inch (6th Generation): with M2 chip, Liquid Retina XDR
+            Display,
+            256GB,
+            Wi-Fi 6E + 5G Cellular, 12MP
+            front/12MP and 10MP Back Cameras, Face ID, All-Day Battery Life – Space Gray
+          </p>
+        </div>
+        <div class="col-3 d-flex justify-content-center">
+          <p class="text-danger d-flex align-items-start bg-warning  position-relative">
+            <small class="">$</small>
+            <small class="fs-4 bg-info">806</small>
+            <small class="">05</small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- navbar bottom property end -->
 
 
   <script src="assets/js/bootstrap.bundle.min.js"></script>
