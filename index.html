@@ -98,12 +98,12 @@
             <div class="col d-flex flex-column flex-sm-row align-items-center gap-2 justify-content-center px-1">
               <div class="col d-flex">
                 <!--translate button Modal start-->
-                <button type="button" class="btn btn-sm d-flex align-items-center px-1 gap-1 nav-item lh-lg"
+                <button type="button" class="btn btn-sm d-flex align-items-center gap-1 nav-item"
                   style="--bs-link-hover-color-rgb:0,0,0; ">
-                  <i class="bi bi-flag-fill text-light" style=""></i>
-                  <div class="d-flex flex-column text-start w-100 h6">
-                    <span>EN</span>
-                  </div>
+                  <img src="assets/img/usa-flag.jpg" width="27" alt="">
+                  <p class="d-flex flex-column text-start w-100 h6 text-light">
+                    EN
+                  </p>
                   <i class="bi bi-caret-down-fill text-secondary" style="font-size: .6rem;"></i>
                 </button>
                 <!--translate button Modal end-->
@@ -211,27 +211,29 @@
   <!-- navbar bottom property start -->
   <div class="container-fluid shadow bg-body-secondary">
     <div class="container">
-      <div class="row py-1 d-flex align-items-center">
-        <div class="col-3 d-flex justify-content-center">
-          <img src="assets/img/ipad_.jpg" class="img-thumbnail" width="60" alt="">
-        </div>
-        <div class="col-6">
-          <p class="overflow-hidden text-nowrap fw-bold text-center m-0" style="font-size: .8rem;">
-            Apple iPad Pro 12.9-inch (6th Generation): with M2 chip, Liquid Retina XDR
-            Display,
-            256GB,
-            Wi-Fi 6E + 5G Cellular, 12MP
-            front/12MP and 10MP Back Cameras, Face ID, All-Day Battery Life – Space Gray
-          </p>
-        </div>
-        <div class="col-3 d-flex justify-content-center">
-          <div class="text-danger d-flex align-items-start">
-            <div class="d-flex py-1">$</div>
-            <div class="d-flex fs-4 ">806</div>
-            <div class="d-flex py-1">.05</div>
+      <a href="#">
+        <div class="row py-1 d-flex align-items-center">
+          <div class="col-3 d-flex justify-content-center">
+            <img src="assets/img/ipad_.jpg" class="img-thumbnail" width="60" alt="">
+          </div>
+          <div class="col-6">
+            <p class="overflow-hidden text-truncate fw-bold text-center m-0" style="font-size: .8rem;">
+              Apple iPad Pro 12.9-inch (6th Generation): with M2 chip, Liquid Retina XDR
+              Display,
+              256GB,
+              Wi-Fi 6E + 5G Cellular, 12MP
+              front/12MP and 10MP Back Cameras, Face ID, All-Day Battery Life – Space Gray
+            </p>
+          </div>
+          <div class="col-3 d-flex justify-content-center">
+            <div class="text-danger d-flex align-items-start">
+              <div class="d-flex py-1">$</div>
+              <div class="d-flex fs-4 ">806</div>
+              <div class="d-flex py-1">.05</div>
+            </div>
           </div>
         </div>
-      </div>
+      </a>
     </div>
   </div>
   <!-- navbar bottom property end -->
@@ -255,37 +257,39 @@
   <!-- product detail area start -->
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-lg-5 d-flex p-3">
-        <div class="col-2 d-flex flex-column px-2">
-          <a href="#">
-            <img src="assets/img/1.jpg" alt="" class="img-thumbnail " width="60" height="60">
-          </a>
-          <a href="#">
-            <img src="assets/img/2.jpg" alt="" class="img-thumbnail " width="60" height="60">
-          </a>
-          <a href="#">
-            <img src="assets/img/3.jpg" alt="" class="img-thumbnail " width="60" height="60">
-          </a>
-          <a href="#">
-            <img src="assets/img/4.jpg" alt="" class="img-thumbnail " width="60" height="60">
-          </a>
-          <a href="#">
-            <img src="assets/img/5.jpg" alt="" class="img-thumbnail " width="60" height="60">
-          </a>
-          <a href="#">
-            <img src="assets/img/6.jpg" alt="" class="img-thumbnail " width="60" height="60">
-          </a>
-          <a href="#">
-            <img src="assets/img/7.png" alt="" class="img-thumbnail " width="60" height="60">
-          </a>
+      <div class="col-md-6 col-xl-7 d-flex px-3 ">
+        <div class="col-2">
+          <div class=" d-flex flex-column sticky-md-top">
+            <a href="#">
+              <img src="assets/img/1.jpg" alt="" class="img-thumbnail" width="60" height="60">
+            </a>
+            <a href="#">
+              <img src="assets/img/2.jpg" alt="" class="img-thumbnail" width="60" height="60">
+            </a>
+            <a href="#">
+              <img src="assets/img/3.jpg" alt="" class="img-thumbnail" width="60" height="60">
+            </a>
+            <a href="#">
+              <img src="assets/img/4.jpg" alt="" class="img-thumbnail" width="60" height="60">
+            </a>
+            <a href="#">
+              <img src="assets/img/5.jpg" alt="" class="img-thumbnail" width="60" height="60">
+            </a>
+            <a href="#">
+              <img src="assets/img/6.jpg" alt="" class="img-thumbnail" width="60" height="60">
+            </a>
+            <a href="#">
+              <img src="assets/img/7.png" alt="" class="img-thumbnail" width="60" height="60">
+            </a>
+          </div>
         </div>
         <div class="col-10">
-          <div class="col">
+          <div class="col sticky-md-top">
             <img src="assets/img/1.jpg" alt="" style="width: 100%;">
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-5">
+      <div class="col-md-6 col-xl-3">
         <div class="row">
           <div class="col">
             <h3 style="font-size: 1.6rem;">Apple iMac 24" with Retina 4.5K Display, M1 Chip with 8-Core CPU and 8-Core
@@ -389,30 +393,82 @@
           </div>
         </div>
       </div>
-      <div class="d-none d-lg-flex col-lg-2 flex-column row-gap-3">
-        <div class="card h-25">
+      <div class="d-flex col-10 mx-auto my-5 my-xl-0 py-5 py-md-0 col-xl-2 flex-column row-gap-3">
+        <div class="card rounded-4">
           <div class="card-body product-color">
             <h5 class="card-title">$2,119.00</h5>
-            <small class="card-subtitle mb-2 text-body-secondary">This item cannot be shipped to your selected delivery
+            <small class="card-subtitle mb-2 text-body-secondary">This item cannot be shipped
+              to your selected delivery
               location. Please choose a different delivery location.</small>
-            <p class="card-text"><a href="#" class="product-color">
+            <a href="#" class="btn btn-warning btn-sm w-100 my-2 rounded-4">See similar items</a>
+            <p class="card-text">
+              <a href="#" class="text-info">
                 <i class="bi bi-geo-alt"><small>Deliver to Germany</small></i>
               </a>
+              <hr>
+            <div class="btn btn-outline-dark w-100 btn-sm rounded-4 text-start">Add to List</div>
             </p>
-            <a href="#" class="btn btn-warning btn-sm w-100">See similar items</a>
+
           </div>
         </div>
-        <div class="card h-50">
+        <div class="card rounded-4">
+          <div class="card-header bg-transparent">
+            <h6 class="card-title text-center" style="font-size: .85rem;">Add an Accessory:</h6>
+          </div>
           <div class="card-body">
-            <h5 class="card-title fs-small">Add an Accessory:</h5>
-            <hr>
-            <small class="card-subtitle mb-2 text-body-secondary">This item cannot be shipped to your selected delivery
-              location. Please choose a different delivery location.</small>
-            <p class="card-text"><a href="#" class="product-color">
-                <i class="bi bi-geo-alt"><small>Deliver to Germany</small></i>
-              </a>
+            <p class="card-description">
+              <a href="#" class="text-decoration-underline text-info"><small>Microsoft 365 Family | 3 Months Free, Plus
+                  12-Month Subscription | Premium Office Apps | Up to
+                  6 users |
+                  PC/Mac Download
+                  (Renews to 12-Month Subscription) | Activation Required</small></a>
             </p>
-            <a href="#" class="btn btn-warning btn-sm w-100">See similar items</a>
+            <div class="d-flex justify-content-between">
+              <span>$89.99</span>
+              <div class="btn btn-sm btn-warning rounded-4" style="font-size: .7rem;">Add to Cart</div>
+            </div>
+          </div>
+          <hr>
+          <div class="card-body">
+            <p class="card-description">
+              <a href="#" class="text-decoration-underline text-info"><small>Microsoft 365 Family | 3 Months Free, Plus
+                  12-Month Subscription | Premium Office Apps | Up to
+                  6 users |
+                  PC/Mac Download
+                  (Renews to 12-Month Subscription) | Activation Required</small></a>
+            </p>
+            <div class="d-flex justify-content-between">
+              <span>$89.99</span>
+              <div class="btn btn-sm btn-warning rounded-4" style="font-size: .7rem;">Add to Cart</div>
+            </div>
+          </div>
+          <hr>
+          <div class="card-body">
+            <p class="card-description">
+              <a href="#" class="text-decoration-underline text-info"><small>Microsoft 365 Family | 3 Months Free, Plus
+                  12-Month Subscription | Premium Office Apps | Up to
+                  6 users |
+                  PC/Mac Download
+                  (Renews to 12-Month Subscription) | Activation Required</small></a>
+            </p>
+            <div class="d-flex justify-content-between">
+              <span>$89.99</span>
+              <div class="btn btn-sm btn-warning rounded-4" style="font-size: .7rem;">Add to Cart</div>
+            </div>
+          </div>
+          <hr>
+          <div class="card-body">
+            <p class="card-description">
+              <a href="#" class="text-decoration-underline text-info"><small>Microsoft 365 Family | 3 Months Free, Plus
+                  12-Month Subscription | Premium Office Apps | Up to
+                  6 users |
+                  PC/Mac Download
+                  (Renews to 12-Month Subscription) | Activation Required</small></a>
+            </p>
+            <div class="d-flex justify-content-between">
+              <span>$89.99</span>
+              <div class="btn btn-sm btn-warning rounded-4" style="font-size: .7rem;">Add to Cart</div>
+            </div>
           </div>
         </div>
       </div>
@@ -420,7 +476,173 @@
   </div>
   <!-- product detail area end  -->
 
+  <!-- product detail bottom start -->
+  <div class="container py-5">
+    <div class="row d-flex flex-column flex-xl-row">
+      <div class="col-xl-6">
+        <hr class="me-3">
+        <div class="card mb-3 shadow m-auto" style="width: 90%;">
+          <div class="row g-0 pt-2">
+            <div class="col-md-4">
+              <img src="assets/img/41D5YWTlWDL._AC_SR420,330_.jpg" class="img-fluid rounded-start p-3 " alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <p class=" card-description-2">Apple 2023 iMac All-in-One Desktop Computer with M3 chip: 8-core CPU,
+                  10-core GPU, 24-inch Retina Display, 8GB Unified
+                  Memory, 256GB SSD Storage, Matching Accessories. Works with iPhone/iPad; Orange</p>
+                <p class="card-text d-flex align-items-center">
+                  <span class="fs-6 text-warning d-flex">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <i class="bi bi-star"></i>
+                  </span>
+                  <span class="fw-semibold ms-2">16</span>
+                  <span class="vr mx-4"></span>
+                  <span class="fs-6 text-warning d-flex">
+                    $1,499.00
+                  </span>
+                  <span class="d-flex align-items-center">
+                    <img src="assets/img/amazon-prime.png" class="mx-2" width="40" height="12" alt="">
+                  </span>
+                </p>
+                <small><a href="#" class="text-info">Shop now</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-6 pb-5">
+        <hr class="ms-3">
+        <div class="card border-0">
+          <div class="row g-0">
+            <div class="card-title px-3 fw-bold fs-5 mb-0 pb-0">Consider a similar item</div>
+            <p class="bg-dark h-25 bg-dark px-1 mx-3 mb-0 pb-0" style="width: 10rem; ">
+              <span class="text-light p-1" style="font-size: calc(0.6rem + 0.2vw);">Amazon's </span>
+              <span class="product-color p-1" style="font-size: calc(0.6rem + 0.2vw);">Choice</span>
+            <div class="parallelogram">
+            </div>
+            </p>
+            <div class="col-md-2 m-0 p-0">
+              <img src="assets/img/71KR2i6-WaL._SS100_.jpg" class="img-fluid rounded-start w-100" alt="...">
+            </div>
+            <div class="col-md-10 m-0 p-0">
+              <div class="card-body m-0 p-1">
+                <p class="card-description-2 m-0 p-0 text-info">Apple 2023 iMac All-in-One Desktop Computer with M3
+                  chip: 8-core
+                  CPU,
+                  10-core GPU, 24-inch Retina Display, 8GB Unified
+                  Memory, 256GB SSD Storage, Matching Accessories. Works with iPhone/iPad; Orange</p>
+                <p class="card-text">
+                  <span class="fs-6 text-warning d-flex">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <i class="bi bi-star"></i>
+                    <span class="fw-semibold ms-2 text-info">(1015)</span>
+                  </span>
+                  <span class="fs-6 d-flex py-1">
+                    $1,499.00
+                  </span>
+                  <span class="d-flex align-items-center">
+                    <img src="assets/img/pledge.jpeg" class="mx-2" width="16" height="16" alt="">
+                    <small class="text-success">Climate Pledge Friendly</small>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </div>
+  <!-- product detail bottom end -->
+
+  <!-- related Products start -->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div id="Preffer1" class="container my-5">
+          <div class="baslik d-flex justify-content-start align-items-end my-3">
+            <p class="h5 mx-5"><strong>Products related to this item</strong></p>
+            <a href="#">
+              <p class="h6"><strong>All &gt;</strong></p>
+            </a>
+          </div>
+          <div id="prefferAreaCarousel1" class="carousel slide px-5">
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <div class="dealoftheday-area d-flex">
+                  <div class="preffer text-center">
+
+                    <img src="assets/img/prefer-1.jpg" class="img-fluid img-thumbnail" alt="preffer1">
+                    <p class="card-description text-truncate w-25">Dell Vostro 3910 Business Desktop Computer, 12th Gen
+                      Intel Core i5-12400 Processor, 16GB DDR4 RAM, 256GB PCIe SSD + 1TB
+                      HDD, WiFi 6, DVD-RW, Display Port, HDMI, Windows 11 Pro, Black</p>
+                    <div class="preffer-star">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <span>&nbsp;205</span>
+                    </div>
+                    <p class="h6"><strong>1544,99 TL</strong></p>
+                    <span class="indirim">%50 discount </span>
+                    <span id="sepet2">Add Cart</span>
+                  </div>
+
+                </div>
+              </div>
+              <div class="carousel-item active">
+                <div class="dealoftheday-area d-flex">
+
+
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#prefferAreaCarousel1"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon onceki" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#prefferAreaCarousel1"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon sonraki" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- related Products end -->
+
+
+
+
+
   <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+
+    const triggerTabList = document.querySelectorAll('#myTab button')
+    triggerTabList.forEach(triggerEl => {
+      const tabTrigger = new bootstrap.Tab(triggerEl)
+      triggerEl.addEventListener('click', event => {
+        event.preventDefault()
+        tabTrigger.show()
+      })
+    })
+
+  </script>
 </body>
 
 </html>
