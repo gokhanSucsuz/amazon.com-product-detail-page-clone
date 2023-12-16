@@ -101,3 +101,32 @@ nav .btn:hover {
 footer li {
   color: #e7e6e6;
 }
+
+.carouselExampleControls {
+  padding: 5%;
+}
+
+.std {
+  height: 180px !important;
+  display: flex;
+  align-items: center;
+}
+
+.image-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.image-box img {
+  max-width: 100%;
+  transition: all 0.3s;
+  display: block;
+  height: auto;
+  transform: scale(1.1);
+}
+
+.image-box:hover img {
+  transform: scale(1.2);
+  border-radius: 20px;
+}
