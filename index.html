@@ -154,7 +154,7 @@
   </nav>
   <!-- navbar top end -->
   <!-- navbar bottom start  -->
-  <nav class="navbar-bottom navbar bg-body-secondary py-1" style="background-color: #195851!important;">
+  <nav class="navbar-bottom navbar bg-body-secondary p-1" style="background-color: #195851!important;">
     <div class="container-fluid d-flex justify-content-start flex-column flex-sm-row gap-1">
       <button class="navbar-toggler text-light d-flex gap-2 align-items-sm-center" type="button"
         data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
@@ -172,37 +172,81 @@
         </div>
       </div>
       <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="offcanvas-header bg-dark">
+          <h5 class="offcanvas-title " id="offcanvasNavbarLabel">
+            <i class="bi bi-person-circle px-2"></i>Hello, sign
+            in
+          </h5>
+          <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 list-group">
+            <h5 class="text-dark">Digital Content & Devices</h5>
+            <li class="nav-item list-group-item-action">
+              <a class="nav-link active fw-normal" aria-current="page" href="#">Amozon Music</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+            <li class="nav-item list-group-item-action">
+              <a class="nav-link fw-normal" href="#">Kindle E-readers & Books</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+
+            <li class="nav-item list-group-item-action">
+              <a class="nav-link fw-normal" href="#">Amazon Appstore</a>
             </li>
           </ul>
-          <form class="d-flex mt-3" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+          <hr class="text-dark">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 list-group">
+            <h5 class="text-dark">Shop By Department</h5>
+            <li class="nav-item list-group-item-action">
+              <a class="nav-link active fw-normal" aria-current="page" href="#">Electronics</a>
+            </li>
+            <li class="nav-item list-group-item-action">
+              <a class="nav-link fw-normal" href="#">Computers</a>
+            </li>
+            <li class="nav-item list-group-item-action">
+              <a class="nav-link fw-normal" href="#">Smart Home</a>
+            </li>
+            <li class="nav-item list-group-item-action">
+              <a class="nav-link fw-normal" href="#">Arts & Crafts</a>
+            </li>
+          </ul>
+          <hr class="text-dark">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 list-group">
+            <h5 class="text-dark">Programs & Features</h5>
+            <li class="nav-item list-group-item-action">
+              <a class="nav-link active fw-normal" aria-current="page" href="#">Gifts Cards</a>
+            </li>
+            <li class="nav-item list-group-item-action">
+              <a class="nav-link fw-normal" href="#">Shop Bu Interest</a>
+            </li>
+            <li class="nav-item list-group-item-action">
+              <a class="nav-link fw-normal" href="#">Amazon Live</a>
+            </li>
+            <li class="nav-item list-group-item-action">
+              <a class="nav-link fw-normal" href="#">International Shopping</a>
+            </li>
+          </ul>
+          <hr class="text-dark">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 list-group">
+            <h5 class="text-dark">Help & Settings</h5>
+            <li class="nav-item list-group-item-action">
+              <a class="nav-link active fw-normal" aria-current="page" href="#">Your Accounts</a>
+            </li>
+            <li class="nav-item list-group-item-action">
+              <a class="nav-link fw-normal" href="#"><i class="bi bi-globe px-2 text-dark"></i> English</a>
+            </li>
+            <li class="nav-item list-group-item-action">
+              <a class="nav-link fw-normal" href="#">
+                <img src="assets/img/usa-flag.jpg" width="20" alt="">
+                <span class="text-dark">United States</span>
+              </a>
+            </li>
+            <li class="nav-item list-group-item-action">
+              <a class="nav-link fw-normal" href="#">Customer Service</a>
+            </li>
+            <li class="nav-item list-group-item-action">
+              <a class="nav-link fw-normal" href="#">Sign in</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
