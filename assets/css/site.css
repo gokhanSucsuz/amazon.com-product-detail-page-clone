@@ -97,3 +97,7 @@ nav .btn:hover {
   margin-left: -30px;
   background: white;
 }
+
+footer li {
+  color: #e7e6e6;
+}
