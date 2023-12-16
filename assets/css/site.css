@@ -130,3 +130,7 @@ footer li {
   transform: scale(1.2);
   border-radius: 20px;
 }
+
+.offcanvas a, .offcanvas h5, .offcanvas i{
+  font-size: calc(.8rem + 0.2vw);
+}
